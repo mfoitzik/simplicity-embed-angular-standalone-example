@@ -12,13 +12,8 @@ import { SimplicityEmbed } from '@simplicitywebtools/simplicity-embed-angular';
 })
 export class AppComponent implements OnInit  {
   title = 'angular-standalone';
-  setHeading = "Rate Me!";
   seSetup = "http://localhost:5500/config.json";
   private sembed: SimplicityEmbed | null = null;
-  //constructor(private elementRef: ElementRef) {
-    //this.sembed = this.elementRef.nativeElement.querySelector("#simplicity") as SimplicityEmbed;
-    //this.sembed = document.getElementById("simplicity") as any;
-  //}
   openSimplicityEmbed() {
     this.sembed?.open();
   }
